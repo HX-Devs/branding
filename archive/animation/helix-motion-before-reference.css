@@ -1,0 +1,65 @@
+/* HELIX — CSS-only, 4.8-second cycle. Scope all rules to the component. */
+.helix-motion {
+  --helix-ink: #292c29;
+  --helix-duration: 4.8s;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 5 / 2;
+  color: var(--helix-ink);
+  container-type: inline-size;
+}
+.helix-motion *, .helix-motion *::before { box-sizing: border-box; }
+.helix-motion__letters { transform-origin:50% 50%; animation:helix-settle var(--helix-duration) cubic-bezier(.22,.8,.3,1) infinite; position: absolute; left:31.85%; top:37.5%; width:36.3%; height:25%; }
+.helix-motion__h, .helix-motion__x, .helix-motion__middle { position:absolute; inset:0; }
+.helix-motion__stroke { position:absolute; left:0; top:0; width:29.752066%; height:100%; background:currentColor; }
+.helix-motion__middle svg { display:block; width:100%; height:100%; fill:currentColor; }
+.helix-motion__h { animation:helix-h var(--helix-duration) cubic-bezier(.4,0,.2,1) infinite; }
+.helix-motion__x { animation:helix-x var(--helix-duration) cubic-bezier(.4,0,.2,1) infinite; }
+.helix-motion__middle { transform-origin:50% 50%; animation:helix-middle var(--helix-duration) cubic-bezier(.4,0,.6,1) infinite; }
+.helix-motion__cross { animation:helix-cross var(--helix-duration) cubic-bezier(.4,0,.6,1) infinite; }
+@keyframes helix-h {
+  0%,24%,98%,100% {transform:translateX(0)}
+  34% {transform:translateX(36.3%)}
+  39% {transform:translateX(34.8%)}
+  45%,88% {transform:translateX(35.123967%)}
+}
+@keyframes helix-x {
+  0%,24%,98%,100% {transform:translateX(77.410468%)}
+  34% {transform:translateX(33.95%)}
+  39% {transform:translateX(35.45%)}
+  45%,88% {transform:translateX(35.123967%)}
+}
+/* Accordion: compress letter widths and spacing toward the center.
+   Intermediate states mirror exactly during expansion, including opacity. */
+@keyframes helix-middle {
+  0%,24%,98%,100% {transform:scaleX(1); opacity:1}
+  30%,92% {transform:scaleX(.28); opacity:.8}
+  34%,88% {transform:scaleX(.015); opacity:0}
+}
+@keyframes helix-cross { 0%,24%,98%,100% {opacity:1} 34%,88% {opacity:0} }
+.helix-motion__left { clip-path:polygon(0.000000% 0%,15.740741% 0%,15.740741% 100%,0.000000% 100%); }
+.helix-motion__bridge { clip-path:polygon(15.740741% 41%,49.074074% 41%,49.074074% 59%,15.740741% 59%); animation:helix-bridge var(--helix-duration) cubic-bezier(.4,0,.2,1) infinite; }
+@keyframes helix-bridge { 0%,24%,98%,100% {clip-path:polygon(15.740741% 41%,49.074074% 41%,49.074074% 59%,15.740741% 59%)} 34%,88% {clip-path:polygon(15.740741% 41%,50.083333% 41%,58.250000% 59%,15.740741% 59%)} }
+.helix-motion__diagonal { clip-path:polygon(49.074074% 0%,64.814815% 0%,64.814815% 100%,49.074074% 100%); animation:helix-diagonal var(--helix-duration) cubic-bezier(.4,0,.2,1) infinite; }
+@keyframes helix-diagonal { 0%,24%,98%,100% {clip-path:polygon(49.074074% 0%,64.814815% 0%,64.814815% 100%,49.074074% 100%)} 34%,88% {clip-path:polygon(37.037037% 0%,54.629630% 0%,100.000000% 100%,82.407407% 100%)} }
+.helix-motion__cross { clip-path:polygon(0.000000% 0%,18.518519% 0%,79.629630% 100%,61.111111% 100%); }
+.helix-motion__upper { clip-path:polygon(61.111111% 0%,79.629630% 0%,49.074074% 50%,30.555556% 50%); animation:helix-upper var(--helix-duration) cubic-bezier(.4,0,.2,1) infinite; }
+@keyframes helix-upper { 0%,24%,98%,100% {clip-path:polygon(61.111111% 0%,79.629630% 0%,49.074074% 50%,30.555556% 50%)} 34%,88% {clip-path:polygon(82.407407% 0%,100.000000% 0%,80.092593% 43.878%,71.296296% 24.49%)} }
+.helix-motion__lower { clip-path:polygon(49.074074% 50%,18.518519% 100%,0.000000% 100%,30.555556% 50%); animation:helix-lower var(--helix-duration) cubic-bezier(.4,0,.2,1) infinite; }
+@keyframes helix-lower { 0%,24%,98%,100% {clip-path:polygon(49.074074% 50%,18.518519% 100%,0.000000% 100%,30.555556% 50%)} 34%,88% {clip-path:polygon(65.740741% 75.51%,54.629630% 100%,37.037037% 100%,56.944444% 56.122%)} }
+/* A small shared pulse settles the assembled mark without changing its final geometry. */
+@keyframes helix-settle {
+  0%,24%,45%,88%,100% {transform:scale(1)}
+  34% {transform:scale(1.045)}
+  39% {transform:scale(.985)}
+}
+/* Freeze at the approved symbol for visitors requesting reduced motion. */
+@media (prefers-reduced-motion: reduce) {
+ .helix-motion *, .helix-motion *::before { animation:none !important; }
+ .helix-motion__h, .helix-motion__x {transform:translateX(35.123967%)}
+ .helix-motion__middle, .helix-motion__cross {opacity:0}
+ .helix-motion__bridge {clip-path:polygon(15.740741% 41%,50.083333% 41%,58.250000% 59%,15.740741% 59%)}
+ .helix-motion__diagonal {clip-path:polygon(37.037037% 0%,54.629630% 0%,100.000000% 100%,82.407407% 100%)}
+ .helix-motion__upper {clip-path:polygon(82.407407% 0%,100.000000% 0%,80.092593% 43.878%,71.296296% 24.49%)}
+ .helix-motion__lower {clip-path:polygon(65.740741% 75.51%,54.629630% 100%,37.037037% 100%,56.944444% 56.122%)}
+}

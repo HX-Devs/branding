@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1120" viewBox="0 0 1440 1120">
+<rect width="1440" height="1120" fill="#F5F2EB"/>
+<g fill="#292C29" font-family="Arial, sans-serif">
+<text x="80" y="65" font-size="15" letter-spacing="3">HELIX / IDENTIDAD DE MARCA</text>
+<text x="1360" y="65" font-size="15" text-anchor="end">MEXICO · SOFTWARE</text>
+</g>
+<g transform="translate(84 130) scale(.85)"><g transform="translate(16 29) scale(1.06)" fill="#A45C47"><path d="M0.000000 0.000000L20.000000 0.000000L20.000000 100.000000L0.000000 100.000000Z"/><path d="M20.000000 39.500000L51.855000 39.500000L62.145000 60.500000L20.000000 60.500000Z"/><path d="M38.500000 0.000000L60.500000 0.000000L109.500000 100.000000L87.500000 100.000000Z"/><path d="M87.500000 0.000000L109.500000 0.000000L88.000000 43.877551L77.000000 21.428571Z"/><path d="M71.000000 78.571429L60.500000 100.000000L38.500000 100.000000L60.000000 56.122449Z"/></g><g transform="translate(174 32)" fill="#292C29" stroke="#292C29" stroke-width="6" stroke-linejoin="miter"><path d="M0 0H14V41H53V0H67V100H53V55H14V100H0Z"/>
+<path d="M88 0H149V14H102V41H144V55H102V86H149V100H88Z"/>
+<path d="M170 0H184V86H228V100H170Z"/>
+<path d="M248 0H262V100H248Z"/>
+<path d="M281 0H298L321 36L344 0H361L330 49L363 100H346L321 62L296 100H279L312 49Z"/></g></g>
+<text x="80" y="390" fill="#292C29" font-family="Georgia, serif" font-size="62">Crea con</text>
+<text x="80" y="460" fill="#292C29" font-family="Georgia, serif" font-size="62">propósito.</text>
+<text x="83" y="510" fill="#62685F" font-family="Arial, sans-serif" font-size="22"><tspan x="83">Damos forma a ideas que convierten lo complejo</tspan><tspan x="83" dy="32">en nuevas posibilidades.</tspan></text>
+<rect x="950" y="130" width="410" height="390" rx="3" fill="#E4E7DE"/>
+<g transform="translate(1068.6 245) scale(1.6)" fill="#53634F"><path d="M0.000000 0.000000L20.000000 0.000000L20.000000 100.000000L0.000000 100.000000Z"/><path d="M20.000000 39.500000L51.855000 39.500000L62.145000 60.500000L20.000000 60.500000Z"/><path d="M38.500000 0.000000L60.500000 0.000000L109.500000 100.000000L87.500000 100.000000Z"/><path d="M87.500000 0.000000L109.500000 0.000000L88.000000 43.877551L77.000000 21.428571Z"/><path d="M71.000000 78.571429L60.500000 100.000000L38.500000 100.000000L60.000000 56.122449Z"/></g>
+<g font-family="Arial, sans-serif" font-size="16" fill="#292C29">
+<text x="80" y="610" letter-spacing="2">COLOR</text>
+</g>
+<rect x="80" y="635" width="240" height="115" fill="#F5F2EB" stroke="#D6D5CC"/><text x="80" y="781" fill="#292C29" font-family="Arial, sans-serif" font-size="18">Ivory / #F5F2EB</text><rect x="340" y="635" width="240" height="115" fill="#292C29" stroke="#D6D5CC"/><text x="340" y="781" fill="#292C29" font-family="Arial, sans-serif" font-size="18">Ink / #292C29</text><rect x="600" y="635" width="240" height="115" fill="#A45C47" stroke="#D6D5CC"/><text x="600" y="781" fill="#292C29" font-family="Arial, sans-serif" font-size="18">Clay / #A45C47</text><rect x="860" y="635" width="240" height="115" fill="#7E8B76" stroke="#D6D5CC"/><text x="860" y="781" fill="#292C29" font-family="Arial, sans-serif" font-size="18">Sage / #7E8B76</text><rect x="1120" y="635" width="240" height="115" fill="#E4E7DE" stroke="#D6D5CC"/><text x="1120" y="781" fill="#292C29" font-family="Arial, sans-serif" font-size="18">Mist / #E4E7DE</text><path d="M80 825H1360" stroke="#D6D5CC"/>
+<g fill="#292C29">
+<text x="80" y="872" font-family="Arial, sans-serif" font-size="15" letter-spacing="2">VOICE</text>
+<text x="80" y="923" font-family="Georgia, serif" font-size="30">Clara. Cercana. Precisa.</text>
+<text x="80" y="965" font-family="Arial, sans-serif" font-size="19">Explicar con sencillez. Prometer con medida.</text>
+<text x="780" y="872" font-family="Arial, sans-serif" font-size="15" letter-spacing="2">BRAND STRUCTURE</text>
+<text x="780" y="923" font-family="Arial, sans-serif" font-size="28">Helix → Products → Games</text>
+<text x="780" y="965" font-family="Arial, sans-serif" font-size="19">Una marca madre. Espacio para nuevas ideas.</text>
+<text x="80" y="1060" font-family="Arial, sans-serif" font-size="14" fill="#62685F">HELIX · Símbolo HX entrelazado + nombre en mayúsculas · Crea con propósito.</text>
+</g></svg>
