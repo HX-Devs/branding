@@ -23,7 +23,7 @@ Open `preview.html` in a browser to see the complete example.
 
 HELIX holds, compresses horizontally into HX, holds as the symbol, and expands back. ELI fades early in the contraction and reappears late in the expansion. A damped horizontal bounce settles the mark without changing its height.
 
-Both states use the same 100-unit visible cap height. The final HX geometry matches the approved [symbol](../logos/symbols/helix-symbol-ink.svg). The inline ELI outlines are clipped to the same cap box.
+Both states use the same 100-unit visible cap height. The final HX geometry matches the approved [symbol](../logos/symbols/helix-symbol-ink.svg). The inline ELI outlines use the same 28-unit stems as the masters. A shared interpolated CSS progress property controls the compression, fade and polygon vertices; the sampled damped bounce keeps a constant cap height.
 
 `prefers-reduced-motion` disables animation and shows the final HX symbol.
 

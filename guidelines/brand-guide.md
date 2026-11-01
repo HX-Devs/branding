@@ -28,7 +28,7 @@ Use the approved [horizontal logos](../logos/horizontal/) and [standalone symbol
 
 HX and HELIX must have the same **visible height**, aligned at both the top and bottom. Include strokes when measuring; do not align only the SVG file boxes.
 
-In the horizontal masters, both have visible bounds from y=29 to y=135, for a height of 106 units. The 100-unit symbol is scaled by 1.06; the 100-unit wordmark includes its 6-unit stroke. The animation uses a shared 100-unit visible cap height throughout its transition.
+In the horizontal masters, both have visible bounds from y=32 to y=132, for a height of 100 units. Both use filled vector outlines without strokes. Main vertical stems are 28 units wide (previously 20). The animation uses a shared 100-unit visible cap height throughout its transition.
 
 The symbol has reinforced stems and diagonals. Preserve its geometry and negative space. Do not stretch, rotate, close the cuts, or add shadows, outlines, or gradients.
 
